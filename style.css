@@ -139,7 +139,8 @@ nav {
   filter: none;
 }
 
-.attributes {
+.attributes,
+.skills-title {
   font-family: "Square Dance", sans-serif;
   font-weight: bolder;
   font-size: 0.8rem;
@@ -184,4 +185,35 @@ video {
 .full-stats img {
   height: 100px;
   width: auto;
+}
+
+.list-skills {
+  font-size: 0.8rem;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+/************** CAMEMBERT ****************
+**************************************************/
+
+.container .box {
+  width: 100px;
+  margin: auto;
+}
+.container .box .chart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100px;
+  height: 100px;
+}
+
+.container .box canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
 }
