@@ -75,8 +75,19 @@ nav {
 }
 
 #navbar-logo {
-  width: 60px;
+  width: 50px;
   height: auto;
+  margin-right: 10px;
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 /************** BANNER LEFT - SIDE ****************
@@ -173,18 +184,20 @@ video {
 
 .full-stats {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
   justify-content: center;
   text-align: center;
 }
 
-.stats .col {
-  justify-content: center;
+.full-stats-content {
+  display: flex;
 }
 
 .full-stats img {
-  height: 100px;
+  height: 80px;
   width: auto;
+  margin: auto;
 }
 
 .list-skills {
@@ -196,8 +209,8 @@ video {
 **************************************************/
 
 .container .box {
-  width: 100px;
-  margin: auto;
+  width: 50px;
+  margin: 0 auto 20px;
 }
 .container .box .chart {
   position: relative;
@@ -205,9 +218,9 @@ video {
   height: 100%;
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 100px;
-  height: 100px;
+  font-size: 12px;
+  line-height: 50px;
+  height: 50px;
 }
 
 .container .box canvas {

@@ -6,10 +6,10 @@ new TypeIt("#typing-demo", {
 
 $(function () {
   $(".chart").easyPieChart({
-    size: 100,
+    size: 50,
     barColor: "darkred",
     scaleLength: 0,
-    lineWidth: 10,
+    lineWidth: 5,
     trackColor: "#eeeeee",
     lineCap: "circle",
     animate: 3000,
