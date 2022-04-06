@@ -5,6 +5,7 @@ new TypeIt("#typing-demo", {
     "👩🏻‍🎤 Designer",
     "🤖 Developer",
     "👽 Human being",
+    "Let's work together",
   ],
   speed: 50,
   waitUntilVisible: true,

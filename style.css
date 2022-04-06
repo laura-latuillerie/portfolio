@@ -29,7 +29,10 @@ h2 {
   font-size: 4em;
 }
 .navbar-brand {
+  display: flex;
+  align-items: center;
   font-family: "Square Dance", sans-serif;
+  font-size: 1.6em;
 }
 
 nav {
@@ -37,18 +40,19 @@ nav {
 }
 
 #navbar-logo {
-  width: 50px;
+  width: 60px;
   height: auto;
 }
 
 .banner-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .top-text {
   display: flex;
   align-items: center;
+  justify-content: end;
   text-align: right;
 }
 
@@ -56,4 +60,9 @@ nav {
   color: black;
   font-weight: bolder;
   font-size: 4em;
+}
+
+.video {
+  display: flex;
+  justify-content: start;
 }
