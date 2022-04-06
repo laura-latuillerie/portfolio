@@ -2,15 +2,21 @@
   box-sizing: border-box;
 }
 
+/************** FONTS *******************
+*****************************************/
+
 @font-face {
   font-family: "Square Dance";
   src: url("./fonts/squaredance00.ttf") format("truetype");
 }
 
+/************** GENERAL *******************
+*****************************************/
+
 body {
-  color: white;
+  color: rgb(30, 30, 30);
   font-family: "DM Sans", sans-serif;
-  background-color: #f1f0f1;
+  background-color: white;
 }
 
 h1,
@@ -24,15 +30,44 @@ h6 {
 }
 
 h2 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 800;
   font-size: 4em;
 }
+
+/************** HR STYLING ****************
+*****************************************/
+
+hr.style {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double darkred;
+  color: darkred;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+hr.style:after {
+  content: "⯁";
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 1em;
+  padding: 0 0.3em;
+  background: white;
+  color: darkred;
+}
+
+/************** NAVBAR ****************
+*****************************************/
+
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-family: "Square Dance", sans-serif;
-  font-size: 1.6em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.3rem;
 }
 
 nav {
@@ -44,25 +79,109 @@ nav {
   height: auto;
 }
 
+/************** BANNER LEFT - SIDE ****************
+**************************************************/
+
 .banner-content {
   display: flex;
   justify-content: space-around;
 }
 
-.top-text {
+.presentation-left {
   display: flex;
   align-items: center;
-  justify-content: end;
-  text-align: right;
+  justify-content: center;
+  text-align: center;
+}
+
+#magic-fire {
+  position: relative;
+  top: 50px;
+  z-index: -5;
+  width: 50%;
+  margin: 0 auto;
+  animation: bounce 0.75s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 #typing-demo {
-  color: black;
   font-weight: bolder;
   font-size: 3em;
 }
 
+.presentation-left h2 {
+  font-family: "Square Dance", sans-serif;
+  font-size: 3rem;
+}
+
+.presentation-left h3 {
+  color: darkred;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.attributes img {
+  filter: grayscale(100%);
+  height: 50px;
+  width: auto;
+  transition: all 0.5s ease-out;
+}
+
+.attributes img:hover {
+  filter: none;
+}
+
+.attributes {
+  font-family: "Square Dance", sans-serif;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  color: darkred;
+}
+
+.description {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.description p {
+  font-size: 1rem;
+}
+
+/************** BANNER VIDEO - CENTER ****************
+**************************************************/
+
 .video {
   display: flex;
   justify-content: start;
+}
+
+video {
+  clip-path: inset(1px 1px);
+}
+
+/************** BANNER RIGHT - SIDE ****************
+**************************************************/
+
+.full-stats {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
+.stats .col {
+  justify-content: center;
+}
+
+.full-stats img {
+  height: 100px;
+  width: auto;
 }
