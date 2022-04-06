@@ -192,6 +192,7 @@ video {
 
 .full-stats-content {
   display: flex;
+  gap: 20px;
 }
 
 .full-stats img {
@@ -203,6 +204,23 @@ video {
 .list-skills {
   font-size: 0.8rem;
   font-family: "DM Sans", sans-serif !important;
+}
+
+.engineer,
+.designer,
+.bonus,
+.marketing {
+  padding: 10px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+}
+
+.engineer:hover,
+.designer:hover,
+.bonus:hover,
+.marketing:hover {
+  box-shadow: inset 10px 10px 20px #d9d9d9, inset -10px -10px 20px #ffffff;
 }
 
 /************** CAMEMBERT ****************
