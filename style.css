@@ -75,10 +75,7 @@ nav {
 }
 
 #navbar-logo {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
-  animation: rotation 4s infinite linear;
+  display: none;
 }
 
 @keyframes rotation {
@@ -124,30 +121,20 @@ nav {
 }
 
 #typing-demo {
+  font-family: "Square Dance", sans-serif !important;
   font-weight: bolder;
-  font-size: 3em;
+  font-size: 2em;
 }
 
-.presentation-left h2 {
-  font-family: "Square Dance", sans-serif;
-  font-size: 3rem;
-}
-
-.presentation-left h3 {
+.presentation-left h1 {
   color: darkred;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
 .attributes img {
-  filter: grayscale(100%);
   height: 50px;
   width: auto;
-  transition: all 0.5s ease-out;
-}
-
-.attributes img:hover {
-  filter: none;
 }
 
 .attributes,
@@ -211,7 +198,7 @@ video {
 .bonus,
 .marketing {
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 20px;
   background: #ffffff;
   box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
 }
@@ -247,4 +234,40 @@ video {
   left: 0;
   width: 100%;
   width: 100%;
+}
+
+/************** RESPONSIVE QUERIES ****************
+**************************************************/
+
+@media (min-width: 768px) {
+  #navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    animation: rotation 4s infinite linear;
+  }
+
+  #typing-demo {
+    font-size: 3em;
+  }
+
+  .presentation-left h1 {
+    font-size: 1.4em;
+  }
+
+  .attributes img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .attributes img:hover {
+    filter: none;
+  }
+
+  .engineer,
+  .designer,
+  .bonus,
+  .marketing {
+    border-radius: 50px;
+  }
 }
