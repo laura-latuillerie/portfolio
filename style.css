@@ -36,8 +36,9 @@ a {
 
 .typing-effect {
   text-transform: capitalize;
-  font-size: 1.2em;
+  font-size: 2.4em;
   font-weight: bolder;
+  margin-top: 20px;
 }
 
 h1 {
@@ -116,11 +117,10 @@ nav {
   display: flex;
   align-items: center;
   margin: 10px auto;
-  gap: 10px;
 }
 
 .skills--icons img {
-  height: 18px;
+  height: 15px;
   width: auto;
 }
 
@@ -130,7 +130,7 @@ nav {
   width: auto;
   color: crimson;
   text-shadow: 0 0 5px rgb(250, 182, 182);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .description {
@@ -143,9 +143,8 @@ nav {
 }
 
 .btn--banner {
-  margin-top: 20px;
+  display: none;
 }
-
 /************** BANNER VIDEO - CENTER ****************
 **************************************************/
 
@@ -214,5 +213,27 @@ video {
 @media (min-width: 768px) {
   .typing-effect {
     font-size: 3.2em;
+    margin-top: 0;
+  }
+
+  .btn--banner {
+    display: unset;
+    margin-top: 20px;
+  }
+
+  .skills--icons img {
+    height: 18px;
+  }
+
+  .fa-brands {
+    font-size: 1.6rem;
+  }
+
+  .presentation--right-content {
+    gap: 20px;
+  }
+
+  .skills--icons {
+    gap: 10px;
   }
 }
