@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -10,51 +12,58 @@
   src: url("./fonts/squaredance00.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Assassins";
+  src: url(./fonts/Assassin-2PGw.ttf) format("truetype");
+}
+
 /************** GENERAL *******************
 *****************************************/
 
 body {
-  color: rgb(30, 30, 30);
+  color: rgb(32, 32, 32);
   font-family: "DM Sans", sans-serif;
   background-color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: bold;
+a {
+  text-decoration: none;
+  font-weight: 500;
 }
 
-h2 {
-  font-size: 4em;
+/************** TITLES ****************
+*****************************************/
+
+.typing-effect {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.skills-title {
+  font-family: "Square Dance", sans-serif;
+  font-weight: bolder;
 }
 
 /************** HR STYLING ****************
 *****************************************/
 
-hr.style {
-  overflow: visible; /* For IE */
-  padding: 0;
-  border: none;
-  border-top: normal double darkred;
-  color: darkred;
-  text-align: center;
-  margin-bottom: 20px;
+.hr--gaming,
+.hr--gaming:after {
+  color: crimson;
 }
 
-hr.style:after {
-  content: "⯁";
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 1em;
-  padding: 0 0.3em;
-  background: white;
-  color: darkred;
+.hr--gaming {
+  overflow: visible; /* For IE */
+  border: none;
+  border-top: normal double crimson;
+  width: 50%;
 }
 
 /************** NAVBAR ****************
@@ -63,11 +72,6 @@ hr.style:after {
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 0.3rem;
 }
 
 nav {
@@ -75,7 +79,9 @@ nav {
 }
 
 #navbar-logo {
-  display: none;
+  width: 50px;
+  height: auto;
+  animation: rotation 4s infinite linear;
 }
 
 @keyframes rotation {
@@ -87,65 +93,44 @@ nav {
   }
 }
 
-/************** BANNER LEFT - SIDE ****************
+/******************* BANNER  ********************
 **************************************************/
 
-.banner-content {
+.presentation--left,
+.presentation--right {
   display: flex;
-  justify-content: space-around;
-}
-
-.presentation-left {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-#magic-fire {
-  position: relative;
-  top: 0px;
-  z-index: -5;
-  width: 60%;
-  margin: 0 auto;
+/************** BANNER LEFT - SIDE ****************
+**************************************************/
+
+.presentation--left--titles {
+  margin-bottom: 10px;
 }
 
-#typing-demo {
-  font-family: "Square Dance", sans-serif !important;
-  font-weight: bolder;
-  font-size: 1.2em;
-  text-shadow: 0 0 10px rgba(220, 220, 220, 0.292);
-}
-
-.full-stats h1 {
-  font-family: "Square Dance", sans-serif;
-  color: darkred;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: 500;
-}
-
-.skills-icons {
+.skills--icons {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
+  margin: 10px auto;
+  gap: 10px;
 }
-.fa-brands {
-  display: inline-block;
-  padding: 5px;
-  font-size: 1.4rem;
-}
-.attributes img {
-  height: 30px;
+
+.skills--icons img {
+  height: 18px;
   width: auto;
 }
 
-.skills-title {
-  font-family: "Square Dance", sans-serif;
-  font-weight: bolder;
-  font-size: 0.8rem;
-  color: darkred;
+.fa-brands {
+  display: flex;
+  align-items: center;
+  width: auto;
+  color: crimson;
+  text-shadow: 0 0 5px rgb(250, 182, 182);
+  font-size: 1.6rem;
 }
 
 .description {
@@ -157,13 +142,12 @@ nav {
   font-size: 1rem;
 }
 
+.btn--banner {
+  margin-top: 20px;
+}
+
 /************** BANNER VIDEO - CENTER ****************
 **************************************************/
-
-.video {
-  display: flex;
-  justify-content: start;
-}
 
 video {
   clip-path: inset(1px 1px);
@@ -172,176 +156,63 @@ video {
 /************** BANNER RIGHT - SIDE ****************
 **************************************************/
 
-.full-stats {
+.presentation--right-content {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  text-align: center;
-}
-
-.full-stats-content {
-  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
   margin-bottom: 20px;
-  gap: 10px;
 }
 
-.full-stats-content img {
+.presentation--right-content img {
   height: 60px;
   width: auto;
-  margin: auto;
+  margin-bottom: 10px;
 }
 
 .list-skills {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.skills-title,
+.list-skills {
   font-size: 0.8rem;
-  font-family: "DM Sans", sans-serif !important;
 }
 
-/************** CAMEMBERT ****************
-**************************************************/
-
-.container .box {
-  width: 50px;
-  margin: 0 auto 20px;
-}
-.container .box .chart {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 50px;
-  height: 50px;
+.skills-title {
+  font-family: "Square Dance", sans-serif;
+  font-weight: bolder;
 }
 
-.container .box canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  width: 100%;
+/************** PERCENTAGE BARS ****************
+*************************************************/
+
+.bar--outer {
+  margin: 10px auto 20px;
+  height: 0.75rem;
+  background-color: rgb(241, 231, 231);
+  border-radius: 1rem;
+  padding: 0 0.25rem;
+  display: grid;
+  box-sizing: border-box;
 }
 
+.bar--inner {
+  height: 50%;
+  background-color: crimson;
+  margin: auto 0;
+  border-radius: 1rem;
+}
+
+.percent {
+  background-color: transparent;
+  font-size: 0.8rem;
+}
 /************** RESPONSIVE QUERIES ****************
 **************************************************/
 
 @media (min-width: 768px) {
-  #navbar-logo {
-    display: unset;
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-    animation: rotation 4s infinite linear;
-  }
-
-  #typing-demo {
-    font-size: 2.4em;
-  }
-
-  .attributes img {
-    filter: grayscale(100%);
-    transition: all 0.5s ease-out;
-  }
-
-  .attributes img:hover {
-    filter: none;
-  }
-}
-
-/************** LED BOX BLINKING ****************
-**************************************************/
-
-.led-box {
-  height: 30px;
-  display: flex;
-  text-align: left;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.led-box h4 {
-  font-family: "Square Dance", sans-serif !important;
-  font-size: 1rem;
-  margin: auto;
-}
-
-.led-green {
-  width: 24px;
-  height: 24px;
-  background-color: #abff00;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #5d8b00 0 -1px 9px,
-    #b5de86 0 2px 12px;
-  -webkit-animation: blink 1s infinite;
-  -moz-animation: blink 1s infinite;
-  -ms-animation: blink 1s infinite;
-  -o-animation: blink 1s infinite;
-  animation: blink 1s infinite;
-}
-
-@-webkit-keyframes blink {
-  from {
-    background-color: #abff00;
-  }
-  50% {
-    background-color: #b5de86;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
-      #b5de86 2px 0;
-  }
-  to {
-    background-color: #abff00;
-  }
-}
-@-moz-keyframes blink {
-  from {
-    background-color: #abff00;
-  }
-  50% {
-    background-color: #b5de86;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
-      #b5de86 0 2px 0;
-  }
-  to {
-    background-color: #abff00;
-  }
-}
-@-ms-keyframes blink {
-  from {
-    background-color: #abff00;
-  }
-  50% {
-    background-color: #b5de86;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
-      #b5de86 0 2px 0;
-  }
-  to {
-    background-color: #abff00;
-  }
-}
-@-o-keyframes blink {
-  from {
-    background-color: #abff00;
-  }
-  50% {
-    background-color: #b5de86;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
-      #b5de86 0 2px 0;
-  }
-  to {
-    background-color: #abff00;
-  }
-}
-@keyframes blink {
-  from {
-    background-color: #abff00;
-  }
-  50% {
-    background-color: #b5de86;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
-      #b5de86 0 2px 0;
-  }
-  to {
-    background-color: #abff00;
+  .typing-effect {
+    font-size: 3.2em;
   }
 }
