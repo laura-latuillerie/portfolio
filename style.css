@@ -40,10 +40,10 @@ hr.style {
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
-  border-top: medium double darkred;
+  border-top: normal double darkred;
   color: darkred;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 hr.style:after {
@@ -104,40 +104,43 @@ nav {
 
 #magic-fire {
   position: relative;
-  top: 50px;
+  top: 0px;
   z-index: -5;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  animation: bounce 0.75s ease-in-out infinite alternate;
-}
-
-@keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10px);
-  }
 }
 
 #typing-demo {
   font-family: "Square Dance", sans-serif !important;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.2em;
+  text-shadow: 0 0 10px rgba(220, 220, 220, 0.292);
 }
 
-.presentation-left h1 {
+.full-stats h1 {
+  font-family: "Square Dance", sans-serif;
   color: darkred;
-  font-size: 1.2em;
+  text-transform: uppercase;
+  font-size: 1.3em;
   font-weight: 500;
 }
 
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.fa-brands {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.4rem;
+}
 .attributes img {
-  height: 50px;
+  height: 30px;
   width: auto;
 }
 
-.attributes,
 .skills-title {
   font-family: "Square Dance", sans-serif;
   font-weight: bolder;
@@ -179,11 +182,12 @@ video {
 
 .full-stats-content {
   display: flex;
-  gap: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
-.full-stats img {
-  height: 80px;
+.full-stats-content img {
+  height: 60px;
   width: auto;
   margin: auto;
 }
@@ -191,23 +195,6 @@ video {
 .list-skills {
   font-size: 0.8rem;
   font-family: "DM Sans", sans-serif !important;
-}
-
-.engineer,
-.designer,
-.bonus,
-.marketing {
-  padding: 10px;
-  border-radius: 20px;
-  background: #ffffff;
-  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
-}
-
-.engineer:hover,
-.designer:hover,
-.bonus:hover,
-.marketing:hover {
-  box-shadow: inset 10px 10px 20px #d9d9d9, inset -10px -10px 20px #ffffff;
 }
 
 /************** CAMEMBERT ****************
@@ -241,6 +228,7 @@ video {
 
 @media (min-width: 768px) {
   #navbar-logo {
+    display: unset;
     width: 50px;
     height: auto;
     margin-right: 10px;
@@ -248,11 +236,7 @@ video {
   }
 
   #typing-demo {
-    font-size: 3em;
-  }
-
-  .presentation-left h1 {
-    font-size: 1.4em;
+    font-size: 2.4em;
   }
 
   .attributes img {
@@ -263,11 +247,101 @@ video {
   .attributes img:hover {
     filter: none;
   }
+}
 
-  .engineer,
-  .designer,
-  .bonus,
-  .marketing {
-    border-radius: 50px;
+/************** LED BOX BLINKING ****************
+**************************************************/
+
+.led-box {
+  height: 30px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.led-box h4 {
+  font-family: "Square Dance", sans-serif !important;
+  font-size: 1rem;
+  margin: auto;
+}
+
+.led-green {
+  width: 24px;
+  height: 24px;
+  background-color: #abff00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #5d8b00 0 -1px 9px,
+    #b5de86 0 2px 12px;
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -ms-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  from {
+    background-color: #abff00;
+  }
+  50% {
+    background-color: #b5de86;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
+      #b5de86 2px 0;
+  }
+  to {
+    background-color: #abff00;
+  }
+}
+@-moz-keyframes blink {
+  from {
+    background-color: #abff00;
+  }
+  50% {
+    background-color: #b5de86;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
+      #b5de86 0 2px 0;
+  }
+  to {
+    background-color: #abff00;
+  }
+}
+@-ms-keyframes blink {
+  from {
+    background-color: #abff00;
+  }
+  50% {
+    background-color: #b5de86;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
+      #b5de86 0 2px 0;
+  }
+  to {
+    background-color: #abff00;
+  }
+}
+@-o-keyframes blink {
+  from {
+    background-color: #abff00;
+  }
+  50% {
+    background-color: #b5de86;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
+      #b5de86 0 2px 0;
+  }
+  to {
+    background-color: #abff00;
+  }
+}
+@keyframes blink {
+  from {
+    background-color: #abff00;
+  }
+  50% {
+    background-color: #b5de86;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #1f8002 0 -1px 9px,
+      #b5de86 0 2px 0;
+  }
+  to {
+    background-color: #abff00;
   }
 }

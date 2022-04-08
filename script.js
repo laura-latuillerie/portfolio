@@ -1,5 +1,5 @@
 new TypeIt("#typing-demo", {
-  strings: "The Magician",
+  strings: "laura latuillerie",
   speed: 75,
   loop: true,
 }).go();
