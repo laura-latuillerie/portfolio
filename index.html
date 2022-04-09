@@ -33,6 +33,7 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="timeline.css" />
+    <link rel="stylesheet" href="block-pixel.css" />
     <title>Laura Latuillerie - Designer/Développeuse Web</title>
   </head>
   <body>
@@ -110,7 +111,11 @@
               <i class="fa-brands fa-wix"></i>
               <i class="fa-brands fa-figma"></i>
               <i class="fa-brands fa-sketch"></i>
-              <img src="./media/Icons/Creative_Cloud.png" alt="adobe-cc-icon" />
+              <img
+                src="./media/logos/adobecc.svg"
+                alt="adobe-cc-icon"
+                id="adobe-cc-icon"
+              />
             </div>
             <hr class="hr--gaming" />
             <!-- ROW OF DESCRIPTION - Flex Item -->
@@ -131,13 +136,13 @@
             <!-- BUTTON CTA - Flex Item -->
             <div class="row buttons--box">
               <a href="#curriculum"
-                ><button type="button" class="btn btn-danger btn--banner">
+                ><button type="button" class="btn btn-primary btn--banner">
                   Curriculum
                 </button></a
               ><a href="#projects">
                 <button
                   type="button"
-                  class="btn btn-outline-danger btn--banner"
+                  class="btn btn-outline-primary btn--banner"
                 >
                   Projects
                 </button></a
@@ -147,9 +152,12 @@
           <!-- END of FIRST COL -->
 
           <!-- SECOND COL -->
-          <div class="col col-12 col-sm-4 video">
-            <video width="100%" height="auto" autoplay muted loop>
-              <source src="./media/video-fast-avatar.mp4" type="video/mp4" />
+          <div class="col col-12 col-sm-4 video text-center">
+            <video width="90%" height="auto" autoplay muted loop>
+              <source
+                src="./media/video-laura-latuillerie-avatar-3d.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
           <!-- END of SECOND COL -->
@@ -229,8 +237,15 @@
         </div>
       </div>
     </div>
+    <!-- PIXEL TRANSITION -->
+
     <!-- CURRICULUM VERTICAL TIMELINE -->
     <div class="container-fluid block--timeline">
+      <img
+        src="./media/layered-waves-haikei.svg"
+        alt="waves decoration"
+        class="waves--decoration"
+      />
       <div class="timeline" id="curriculum">
         <ul>
           <li>
@@ -388,13 +403,18 @@
               />
             </div>
             <div class="time">
-              <h4>2022</h4>
+              <h4>2022 to Now</h4>
             </div>
           </li>
           <div class="clearfix"></div>
         </ul>
       </div>
     </div>
+    <img
+      src="./media/layered-waves-haikei-flipped.svg"
+      alt="waves decoration"
+      class="waves--decoration--flipped"
+    />
     <!-- ------------------------- SCRIPTS ---------------------------------
   --------------------------------------------------------------------->
     <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>

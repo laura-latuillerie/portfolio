@@ -2,19 +2,15 @@
   clear: both;
 }
 
-.block--timeline {
-  padding-top: 150px;
-  background: linear-gradient(
-    180deg,
-    #ffffff,
-    #fda8a5,
-    #fc6c6a,
-    #e33a4b,
-    #de2240,
-    #dc143c
-  );
+.waves--decoration,
+.waves--decoration--flipped {
+  width: 100%;
 }
 
+.block--timeline {
+  z-index: -2;
+  background: #3d2ed1;
+}
 .logo--experience,
 .logo--ecole,
 .logo--experience2,
@@ -54,7 +50,7 @@
   left: 50%;
   width: 2px;
   height: 95%;
-  background-color: darkred;
+  background-color: white;
 }
 .timeline ul {
   margin: 0;
@@ -84,7 +80,7 @@
   clear: both;
 }
 .content {
-  text-shadow: 1px 1px 5px #dc143c;
+  text-shadow: 1px 1px 5px #3d2ed1;
   padding-bottom: 20px;
 }
 .timeline ul li:nth-child(odd)::before {
@@ -96,7 +92,7 @@
   height: 10px;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px palevioletred;
+  box-shadow: 0 0 0 3px #9e95eb;
 }
 .timeline ul li:nth-child(even)::before {
   content: "";
@@ -107,7 +103,7 @@
   height: 10px;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px palevioletred;
+  box-shadow: 0 0 0 3px #9e95eb;
 }
 .timeline ul li h3 {
   margin: 0;
@@ -129,7 +125,7 @@
   background: white;
   color: black;
   border-radius: 18px;
-  box-shadow: 0 0 3px palevioletred;
+  box-shadow: 0 0 3px #9e95eb;
 }
 .timeline ul li:nth-child(even) .time {
   position: absolute;
@@ -140,7 +136,7 @@
   background: white;
   color: black;
   border-radius: 18px;
-  box-shadow: 0 0 3px palevioletred;
+  box-shadow: 0 0 3px #9e95eb;
 }
 
 @media (max-width: 1000px) {
@@ -179,10 +175,19 @@
 }
 
 @media (min-width: 768px) {
+  .block--timeline {
+    position: relative;
+    top: -200px;
+  }
   .timeline {
     padding: 40px;
   }
   .timeline ul li {
     padding: 20px 40px;
+  }
+
+  .waves--decoration--flipped {
+    position: relative;
+    top: -202px;
   }
 }
