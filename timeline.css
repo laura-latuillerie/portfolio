@@ -3,7 +3,16 @@
 }
 
 .block--timeline {
-  background-color: crimson;
+  padding-top: 150px;
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #fda8a5,
+    #fc6c6a,
+    #e33a4b,
+    #de2240,
+    #dc143c
+  );
 }
 
 .logo--experience,
@@ -75,6 +84,7 @@
   clear: both;
 }
 .content {
+  text-shadow: 1px 1px 5px #dc143c;
   padding-bottom: 20px;
 }
 .timeline ul li:nth-child(odd)::before {
