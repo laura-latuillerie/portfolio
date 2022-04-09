@@ -210,6 +210,9 @@ video {
 **************************************************/
 
 @media (min-width: 768px) {
+  .banner {
+    padding-top: 50px;
+  }
   .typing-effect {
     font-size: 3.2em;
     margin-top: 0;
