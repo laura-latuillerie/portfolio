@@ -1,5 +1,5 @@
 new TypeIt(".typing-effect", {
-  strings: "Laura Latuillerie",
+  strings: "",
   speed: 80,
   waitUntilVisible: true,
 }).go();

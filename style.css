@@ -1,7 +1,5 @@
-@import "colors.scss";
-
-* {
-  box-sizing: border-box;
+html {
+  box-sizing: border-box !important;
 }
 
 /************** FONTS *******************
@@ -63,7 +61,7 @@ h1 {
 .hr--gaming {
   overflow: visible; /* For IE */
   border: none;
-  border-top: normal double crimson;
+  border-top: normal double #dc143c;
   width: 50%;
 }
 
@@ -128,7 +126,7 @@ nav {
   display: flex;
   align-items: center;
   width: auto;
-  color: crimson;
+  color: #dc143c;
   text-shadow: 0 0 5px rgb(250, 182, 182);
   font-size: 1.4rem;
 }
