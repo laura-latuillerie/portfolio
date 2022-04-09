@@ -52,12 +52,13 @@ h1 {
 
 h2.block--title {
   font-family: "Square Dance", sans-serif;
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: bolder;
+  margin-top: 40px;
 }
 
 h3.block--title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -161,7 +162,7 @@ nav {
 **************************************************/
 
 video {
-  clip-path: inset(1px 1px);
+  clip-path: inset(5px 5px);
 }
 
 /************** BANNER RIGHT - SIDE ****************
@@ -271,5 +272,13 @@ video {
 
   .skills--icons {
     gap: 10px;
+  }
+
+  h2.block--title {
+    font-size: 3rem;
+  }
+
+  h3.block--title {
+    font-size: 1.6rem;
   }
 }
