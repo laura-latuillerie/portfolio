@@ -215,15 +215,13 @@ video {
     margin-top: 0;
   }
 
-  .buttons--box {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+  .buttons--box a {
+    display: inline-block;
+    flex: 1;
   }
 
   .btn--banner {
-    display: inline-block;
-    flex: 1;
+    display: unset;
     margin-top: 20px;
   }
 
