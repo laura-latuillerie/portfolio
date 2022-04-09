@@ -18,6 +18,7 @@ body {
   color: rgb(32, 32, 32);
   font-family: "DM Sans", sans-serif;
   background-color: white;
+  text-align: center;
 }
 
 .container-fluid {
@@ -40,9 +41,25 @@ a {
 }
 
 h1 {
+  font-family: "Square Dance", sans-serif;
   text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 2px;
+  font-size: 1.6em;
+}
+
+.block--title {
+  color: white;
+}
+
+h2.block--title {
+  font-family: "Square Dance", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+h3.block--title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .skills-title {
@@ -62,7 +79,7 @@ h1 {
   overflow: visible; /* For IE */
   border: none;
   border-top: normal double #3d2ed1;
-  width: 50%;
+  width: 20%;
 }
 
 /************** NAVBAR ****************
@@ -102,14 +119,11 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
 }
 
 /************** BANNER LEFT - SIDE ****************
 **************************************************/
-
-.presentation--left--titles {
-  margin-bottom: 10px;
-}
 
 .skills--icons {
   display: flex;
@@ -132,7 +146,7 @@ nav {
 }
 
 .description {
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: justify;
 }
 
@@ -212,6 +226,11 @@ video {
   .typing-effect {
     font-size: 3.2em;
     margin-top: 0;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
   }
 
   .buttons--box a {
