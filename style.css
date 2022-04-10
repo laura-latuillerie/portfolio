@@ -198,11 +198,13 @@ nav {
 }
 .nav-link {
   color: black !important;
+  margin-left: 10px;
 }
 
 .nav-link:hover {
   transition: all 1s ease-out !important;
   color: #3d2ed1 !important;
+  text-decoration: overline;
 }
 
 #navbar-logo {
