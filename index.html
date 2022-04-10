@@ -31,16 +31,18 @@
     />
 
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="timeline.css" />
-    <link rel="stylesheet" href="block-pixel.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="timeline.css" />
+
     <title>Laura Latuillerie - Designer/Développeuse Web</title>
   </head>
+
   <body class="bg--light font--dark text-center">
+    <div id="loading"></div>
     <header>
       <!---------- NAVBAR ------------------------------------>
       <!------------------------------------------------------>
-      <nav class="navbar container navbar-expand-lg navbar-light">
+      <nav class="navbar container navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
@@ -64,20 +66,18 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarTogglerDemo02"
           >
-            <ul class="navbar-nav text-center">
+            <ul class="navbar-nav text-center font--dark">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home<span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#curriculum">Curriculum</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@
           <div class="col col-12 col-sm-4 justify-content-center">
             <!-- ROW OF SKILLS - Flex Item -->
             <div class="row presentation--left--titles">
-              <h2 class="typing-effect fw-bolder">Hello, I'm Laura ! ✨🧙‍♀️✨</h2>
+              <h2 class="typing-effect fw-bolder">Hello, I'm Laura !</h2>
               <h1 class="font--pixel fs-4">
                 <strong>Web Designer<br />Front-End Developer</strong>
               </h1>
@@ -146,12 +146,12 @@
                 >
                   Curriculum >
                 </button></a
-              ><a href="#projects" class="text-start">
+              ><a href="#portfolio" class="text-start">
                 <button
                   type="button"
                   class="btn btn-outline-primary btn--banner"
                 >
-                  Projects >
+                  Portfolio >
                 </button></a
               >
             </div>
@@ -433,10 +433,12 @@
     />
 
     <!--PROJECT BLOCK -->
-    <div class="container block--projects" id="projects">
+    <div class="container block--projects" id="portfolio">
+      <!--ROW -->
       <div class="row text-center">
+        <!--FIRST COL - Designer Portfolio -->
         <div class="col col-12 col-sm-4 designer--projects">
-          <h2 class="block--title font--dark font--pixel fs-2 fw-bold">
+          <h2 class="block--title font--dark font--pixel fs-1 fw-bold">
             Designer's Portfolio
           </h2>
           <img
@@ -468,7 +470,7 @@
                 <th scope="row">Campaign video</th>
                 <td>
                   <a
-                    href="https://www.figma.com/file/WfV4OdRbIHxJCJxCspXZ82/LOCAL-SOLVER---Hexaly?node-id=538%3A0"
+                    href="https://drive.google.com/file/d/1zZUEhybyhoxU6fivOQDul5IW5iPjLR6i/view?usp=sharing"
                     target="_blank"
                     >View</a
                   >
@@ -478,7 +480,7 @@
                 <th scope="row">A website's presentation</th>
                 <td>
                   <a
-                    href="https://www.figma.com/file/WfV4OdRbIHxJCJxCspXZ82/LOCAL-SOLVER---Hexaly?node-id=538%3A0"
+                    href="https://www.canva.com/design/DAEjREoD3tg/SIFW4KJ2ZHiYgRQ9SmDZhw/view"
                     target="_blank"
                     >View</a
                   >
@@ -487,6 +489,7 @@
             </tbody>
           </table>
         </div>
+        <!--SECOND COL - Vidéo -->
         <div class="col col-12 col-sm-4 video">
           <video width="100%" height="auto" autoplay muted loop>
             <source
@@ -495,8 +498,9 @@
             />
           </video>
         </div>
+        <!-- THIRD COL - Developer Portfolio -->
         <div class="col col-12 col-sm-4">
-          <h2 class="block--title font--dark font--pixel fs-2 fw-bold">
+          <h2 class="block--title font--dark font--pixel fs-1 fw-bold">
             Developer's Portfolio
           </h2>
           <img
