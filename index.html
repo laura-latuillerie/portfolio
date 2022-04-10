@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="block-pixel.css" />
     <title>Laura Latuillerie - Designer/Développeuse Web</title>
   </head>
-  <body>
+  <body class="bg--light font--dark text-center">
     <header>
       <!---------- NAVBAR ------------------------------------>
       <!------------------------------------------------------>
@@ -87,20 +87,20 @@
     <!---------- BANNER ------------------------------------>
     <!------------------------------------------------------>
     <div class="container-fluid">
-      <div class="container">
-        <div class="row banner">
+      <div class="container d-flex">
+        <div class="row banner align-items-center">
           <!-- FIRST COL ///// FLEX CONTAINER -->
-          <div class="col col-12 col-sm-4 presentation--left">
+          <div class="col col-12 col-sm-4 justify-content-center">
             <!-- ROW OF SKILLS - Flex Item -->
             <div class="row presentation--left--titles">
-              <h2 class="typing-effect">Hello, I'm Laura ! ✨🧙‍♀️✨</h2>
-              <h1>
+              <h2 class="typing-effect fw-bolder">Hello, I'm Laura ! ✨🧙‍♀️✨</h2>
+              <h1 class="font--pixel fs-4">
                 <strong>Web Designer<br />Front-End Developer</strong>
               </h1>
             </div>
             <hr class="hr--gaming" />
             <!-- ROW OF SKILLS - Flex Item -->
-            <div class="row skills--icons">
+            <div class="row justify-content-center skills--icons">
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-css3"></i>
               <i class="fa-brands fa-bootstrap"></i>
@@ -109,7 +109,7 @@
               <i class="fa-brands fa-github"></i>
             </div>
             <!-- ROW OF SKILLS - Flex Item -->
-            <div class="row skills--icons">
+            <div class="row justify-content-center skills--icons">
               <i class="fa-brands fa-wordpress"></i>
               <i class="fa-brands fa-shopify"></i>
               <i class="fa-brands fa-wix"></i>
@@ -123,8 +123,8 @@
             </div>
             <hr class="hr--gaming" />
             <!-- ROW OF DESCRIPTION - Flex Item -->
-            <div class="row description">
-              <p>
+            <div class="row text-align-justify description">
+              <p class="fs-6">
                 Based in <strong>Paris</strong>, Laura Latuillerie is a feisty
                 character that you can choose to execute and perform a
                 <strong>digital project</strong> from scratch to a striving
@@ -139,16 +139,19 @@
             </div>
             <!-- BUTTON CTA - Flex Item -->
             <div class="row buttons--box">
-              <a href="#curriculum"
-                ><button type="button" class="btn btn-primary btn--banner">
-                  Curriculum
+              <a href="#curriculum" class="text-end"
+                ><button
+                  type="button"
+                  class="btn btn-primary bg--blue btn--banner"
+                >
+                  Curriculum >
                 </button></a
-              ><a href="#projects">
+              ><a href="#projects" class="text-start">
                 <button
                   type="button"
                   class="btn btn-outline-primary btn--banner"
                 >
-                  Projects
+                  Projects >
                 </button></a
               >
             </div>
@@ -164,14 +167,16 @@
           <!-- END of SECOND COL -->
 
           <!-- THIRD COL -->
-          <div class="col col-12 col-sm-4 presentation--right">
-            <div class="row presentation--right-content">
+          <div class="col col-12 col-sm-4 presentation--right d-flex">
+            <div class="row presentation--right-content d-flex flex-column">
               <!-- MARKETING COL -->
               <div class="col skills marketing">
                 <img src="./media/Icons/heal.png" alt="heal icon" />
-                <h4 class="skills-title">Marketing Buff</h4>
+                <h4 class="skills-title font--pixel fw-bold fs-6">
+                  Marketing Buff
+                </h4>
                 <div class="bar--outer">
-                  <div class="bar--inner" style="width: 70%"></div>
+                  <div class="bar--inner bg--blue" style="width: 70%"></div>
                 </div>
                 <ul class="list-skills">
                   <li>Brainstorming</li>
@@ -185,9 +190,11 @@
               <!-- DESIGNER COL -->
               <div class="col skills designer">
                 <img src="./media/Icons/alchemy.png" alt="alchemy icon" />
-                <h4 class="skills-title">Designer Spirit</h4>
+                <h4 class="skills-title font--pixel fw-bold fs-6">
+                  Designer Spirit
+                </h4>
                 <div class="bar--outer">
-                  <div class="bar--inner" style="width: 90%"></div>
+                  <div class="bar--inner bg--blue" style="width: 90%"></div>
                 </div>
                 <ul class="list-skills">
                   <li>Adobe Illustrator</li>
@@ -200,13 +207,13 @@
               </div>
             </div>
 
-            <div class="row presentation--right-content">
+            <div class="row presentation--right-content d-flex flex-column">
               <!-- DEVELOPER COL -->
               <div class="col skills developer">
                 <img src="./media/Icons/fire.png" alt="fire icon" />
-                <h4 class="skills-title">Holy Code</h4>
+                <h4 class="skills-title font--pixel fw-bold fs-6">Holy Code</h4>
                 <div class="bar--outer">
-                  <div class="bar--inner" style="width: 55%"></div>
+                  <div class="bar--inner bg--blue" style="width: 55%"></div>
                 </div>
                 <ul class="list-skills">
                   <li>HTML/CSS</li>
@@ -220,9 +227,11 @@
               <!-- BONUS SKILLS COL -->
               <div class="col skills bonus">
                 <img src="./media/Icons/pegasus.png" alt="pegasus icon" />
-                <h4 class="skills-title">Bonus Mana</h4>
+                <h4 class="skills-title font--pixel fw-bold fs-6">
+                  Bonus Mana
+                </h4>
                 <div class="bar--outer">
-                  <div class="bar--inner" style="width: 60%"></div>
+                  <div class="bar--inner bg--blue" style="width: 60%"></div>
                 </div>
                 <ul class="list-skills">
                   <li>After Effects</li>
@@ -241,14 +250,18 @@
     <!-- PIXEL TRANSITION -->
 
     <!-- CURRICULUM VERTICAL TIMELINE -->
-    <div class="container-fluid block--timeline">
+    <div class="container-fluid block--timeline font--light">
       <img
         src="./media/layered-waves-haikei.svg"
         alt="waves decoration"
         class="waves--decoration"
       />
-      <h2 class="block--title" id="curriculum">Laura's timeline</h2>
-      <h3 class="block--title">Where education and experiences meets</h3>
+      <h2 class="block--title font--pixel fw-bolder fs-1" id="curriculum">
+        Laura's timeline
+      </h2>
+      <h3 class="block--title fs-4">
+        <em>Where education and experiences meets</em>
+      </h3>
       <div class="timeline">
         <ul>
           <li>
@@ -418,6 +431,43 @@
       alt="waves decoration"
       class="waves--decoration--flipped"
     />
+
+    <!--PROJECT BLOCK -->
+    <div class="container block--projects">
+      <div class="row text-center">
+        <div class="col col-12 col-sm-4 designer--projects">
+          <h2 class="block--title font--dark font--pixel fs-2 fw-bold">
+            Designer's Portfolio
+          </h2>
+          <img
+            src="./media/portfolio-thumbnail.svg"
+            alt="portfolio-thumbnail"
+            class="projects--thumbnails"
+          />
+          <a
+            href="https://www.canva.com/design/DAE8NpvlKwQ/eC2ZyaCBGGWPPrZbCvSXkw/view"
+            target="_blank"
+          >
+            <button type="button" class="btn btn-outline-primary btn--projects">
+              Access to PDF >
+            </button></a
+          >
+        </div>
+        <div class="col col-12 col-sm-4 video">
+          <video width="100%" height="auto" autoplay muted loop>
+            <source
+              src="./media/video-funny-laura-latuillerie.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="col col-12 col-sm-4">
+          <h2 class="block--title font--dark font--pixel fs-2 fw-bold">
+            Developer's Portfolio
+          </h2>
+        </div>
+      </div>
+    </div>
     <!-- ------------------------- SCRIPTS ---------------------------------
   --------------------------------------------------------------------->
     <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>

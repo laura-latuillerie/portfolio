@@ -8,7 +8,6 @@
 }
 
 .block--timeline {
-  z-index: -2;
   background: #3d2ed1;
 }
 .logo--experience,
@@ -176,19 +175,10 @@
 }
 
 @media (min-width: 768px) {
-  .block--timeline {
-    position: relative;
-    top: -200px;
-  }
   .timeline {
     padding: 40px;
   }
   .timeline ul li {
     padding: 20px 40px;
-  }
-
-  .waves--decoration--flipped {
-    position: relative;
-    top: -202px;
   }
 }
