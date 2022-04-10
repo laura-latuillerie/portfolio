@@ -315,7 +315,7 @@ video {
 **************************************************/
 
 footer .row:nth-child(1) {
-  padding: 0px 0px 20px 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 .socials--icons-list li {

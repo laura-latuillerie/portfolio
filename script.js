@@ -4,7 +4,7 @@ window.onload = function () {
 
 new TypeIt(".typing-effect", {
   strings: "",
-  speed: 100,
+  speed: 120,
   loop: true,
 })
   .type("Hello, I'm Laura !", { delay: 100 })
