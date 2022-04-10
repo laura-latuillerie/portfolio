@@ -56,6 +56,13 @@ ul {
   padding-inline-start: 0px;
 }
 
+.skills--icons .fa-brands {
+  width: auto;
+  color: #3d2ed1;
+  text-shadow: 0 0 5px #a39af4;
+  font-size: 1.4rem;
+}
+
 /************** LOADER SCREEN ****************
 ***********************************************/
 
@@ -241,13 +248,6 @@ nav {
   width: auto;
 }
 
-.fa-brands {
-  width: auto;
-  color: #3d2ed1;
-  text-shadow: 0 0 5px #a39af4;
-  font-size: 1.4rem;
-}
-
 .description {
   margin-top: 10px;
   text-align: justify;
@@ -300,12 +300,37 @@ video {
 /************** PROJECTS BLOCK ****************
 **************************************************/
 
+.block--projects {
+  margin-bottom: 50px;
+}
 .projects--thumbnails {
   width: 100%;
 }
 
 .designer--projects img {
   margin-bottom: 40px;
+}
+
+/************** FOOTER BLOCK ****************
+**************************************************/
+
+footer .row:nth-child(1) {
+  padding: 0px 0px 20px 0px;
+}
+
+.socials--icons-list li {
+  display: inline;
+}
+
+.socials--icons-list i {
+  color: white !important;
+  font-size: 1.6rem;
+  text-shadow: 0 0 5px #867ce1;
+  padding: 10px;
+}
+
+.socials--icons-list i:hover {
+  text-shadow: 0 0 8px #b7b2e8;
 }
 
 /************** RESPONSIVE QUERIES ****************
