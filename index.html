@@ -7,7 +7,7 @@
     <!-- FAV ICON -->
     <link
       rel="shortcut icon"
-      href="/media/icon-laura-latuillerie-logo.svg"
+      href="/media/icons/icon-laura-latuillerie-logo.svg"
       type="image/x-icon"
     />
     <!-- GOOGLE FONTS -->
@@ -44,7 +44,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
-              src="./media/icon-laura-latuillerie-logo.svg"
+              src="./media/icons/icon-laura-latuillerie-logo.svg"
               id="navbar-logo"
               alt="logo-laura-latuillerie"
             />
@@ -74,7 +74,7 @@
                 <a class="nav-link" href="#curriculum">Curriculum</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#">Contact</a>
@@ -161,7 +161,7 @@
           <!-- SECOND COL -->
           <div class="col col-12 col-sm-4 video text-center">
             <video width="100%" height="auto" autoplay muted loop>
-              <source src="./media/video.mp4" type="video/mp4" />
+              <source src="./media/videos/video.mp4" type="video/mp4" />
             </video>
           </div>
           <!-- END of SECOND COL -->
@@ -252,7 +252,7 @@
     <!-- CURRICULUM VERTICAL TIMELINE -->
     <div class="container-fluid block--timeline font--light">
       <img
-        src="./media/layered-waves-haikei.svg"
+        src="./media/img/layered-waves-haikei.svg"
         alt="waves decoration"
         class="waves--decoration"
       />
@@ -427,36 +427,70 @@
       </div>
     </div>
     <img
-      src="./media/layered-waves-haikei-flipped.svg"
+      src="./media/img/layered-waves-haikei-flipped.svg"
       alt="waves decoration"
       class="waves--decoration--flipped"
     />
 
     <!--PROJECT BLOCK -->
-    <div class="container block--projects">
+    <div class="container block--projects" id="projects">
       <div class="row text-center">
         <div class="col col-12 col-sm-4 designer--projects">
           <h2 class="block--title font--dark font--pixel fs-2 fw-bold">
             Designer's Portfolio
           </h2>
           <img
-            src="./media/portfolio-thumbnail.svg"
+            src="./media/img/designer-portfolio.svg"
             alt="portfolio-thumbnail"
             class="projects--thumbnails"
           />
-          <a
-            href="https://www.canva.com/design/DAE8NpvlKwQ/eC2ZyaCBGGWPPrZbCvSXkw/view"
-            target="_blank"
+          <table
+            class="table table-borderless table-responsive table-hover table-sm"
           >
-            <button type="button" class="btn btn-outline-primary btn--projects">
-              Access to PDF >
-            </button></a
-          >
+            <thead class="bg--blue font--light font--pixel">
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Portfolio</th>
+                <td>
+                  <a
+                    href="https://www.canva.com/design/DAE8NpvlKwQ/eC2ZyaCBGGWPPrZbCvSXkw/view"
+                    target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Campaign video</th>
+                <td>
+                  <a
+                    href="https://www.figma.com/file/WfV4OdRbIHxJCJxCspXZ82/LOCAL-SOLVER---Hexaly?node-id=538%3A0"
+                    target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">A website's presentation</th>
+                <td>
+                  <a
+                    href="https://www.figma.com/file/WfV4OdRbIHxJCJxCspXZ82/LOCAL-SOLVER---Hexaly?node-id=538%3A0"
+                    target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="col col-12 col-sm-4 video">
           <video width="100%" height="auto" autoplay muted loop>
             <source
-              src="./media/video-funny-laura-latuillerie.mp4"
+              src="./media/videos/video-funny-laura-latuillerie.mp4"
               type="video/mp4"
             />
           </video>
@@ -465,6 +499,90 @@
           <h2 class="block--title font--dark font--pixel fs-2 fw-bold">
             Developer's Portfolio
           </h2>
+          <img
+            src="./media/img/developer-thumbnail.svg"
+            alt="mitrust-website"
+            class="projects--thumbnails"
+          />
+          <table
+            class="table table-borderless table-responsive table-hover table-sm"
+          >
+            <thead class="bg--blue font--light font--pixel">
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Company</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">UI Design</th>
+                <td>IFFI</td>
+                <td>
+                  <a
+                    href="https://www.figma.com/file/Y0TEtTjt8vjpiaCG8K0d7C/IFFI-LP"
+                    target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">UI Design</th>
+                <td>Local Solver</td>
+                <td>
+                  <a
+                    href="https://www.figma.com/file/WfV4OdRbIHxJCJxCspXZ82/LOCAL-SOLVER---Hexaly?node-id=538%3A0"
+                    target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <th scope="row">Website</th>
+                <td>M-itrust</td>
+                <td>
+                  <a href="https://m-itrust.com/" target="_blank">View</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Website</th>
+                <td>StopTalkingStartFunding</td>
+                <td>
+                  <a href="https://stoptalkingstartfunding.org/" target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Website</th>
+                <td>Générations Féministes</td>
+                <td>
+                  <a href="https://generationsfeministes.org/" target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Website</th>
+                <td>RJFAO</td>
+                <td>
+                  <a href="https://feministesao.org/" target="_blank">View</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Landing</th>
+                <td>Podcasts' Theme Demo</td>
+                <td>
+                  <a
+                    href="https://laura-latuillerie.github.io/lesoreillesdhecate/"
+                    target="_blank"
+                    >View</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

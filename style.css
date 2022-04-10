@@ -56,6 +56,24 @@ ul {
   padding-inline-start: 0px;
 }
 
+/************** TABLE *******************
+*****************************************/
+
+table {
+  font-size: 0.8rem;
+}
+
+table a,
+thead {
+  color: #3d2ed1;
+}
+
+th,
+tr,
+td {
+  border-radius: 20px;
+}
+
 /************** TITLES ****************
 *****************************************/
 
@@ -218,6 +236,10 @@ video {
 
 .projects--thumbnails {
   width: 100%;
+}
+
+.designer--projects img {
+  margin-bottom: 40px;
 }
 
 /************** RESPONSIVE QUERIES ****************
